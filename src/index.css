@@ -1,0 +1,151 @@
+html {
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 300;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.table_container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #E5E5E5;
+}
+
+.table {
+  background: #FFFFFF;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logout_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+
+  color: #1157A7;
+}
+
+.root {
+  min-height: 100vh;
+}
+
+.auth_container {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url(assets/Rectangle.png) no-repeat center center fixed;
+}
+
+.auth {
+  background-color: white;
+  width: 410px;
+  height: 338px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #424242;
+}
+
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button_authorize {
+  width: 116px;
+  height: 34px;
+  background: linear-gradient(104.34deg, #3C4CAD -15.34%, #00C3FF 145.95%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+.button_authorize:hover {
+  background: linear-gradient(104.34deg, #3C4CAD -15.34%, #00C3FF 145.95%);
+  box-shadow: 0px 0px 4px #99A0A3;
+  cursor: pointer;
+}
+
+.button_authorize:active {
+  background: linear-gradient(104.34deg, #5362BE -15.34%, #4AD5FF 145.95%);
+  border: 1.5px solid rgba(29, 138, 216, 0.3);
+  cursor: pointer;
+}
+
+.form_input, .form_input:focus {
+  width: 345px;
+  height: 34px;
+
+  border: 1px solid #C9CACC;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  outline: none;
+}
+
+.form_input__warning, .form_input__warning:focus {
+  border: 1px solid #EB1717;
+  box-shadow: 0px 0px 4px rgba(235, 23, 23, 0.2);
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form_margin {
+  margin-bottom: 2px;
+}
+
+.form_text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #424242;
+
+  margin-bottom: 8px;
+}
+
+.form_text__warning {
+  color: #EB1717;
+}
+
+.form_text__error {
+  margin-bottom: 2px;
+}
+
+.hide {
+  visibility: hidden;
+}
