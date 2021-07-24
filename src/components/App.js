@@ -1,17 +1,19 @@
 import React from 'react'
-import { Route, Router, Switch } from 'react-router-dom'
-import Auth from '../auth'
-import About from '../about'
+import { Route, Switch } from 'react-router-dom'
 import { connect } from "react-redux"
+import Auth from './Auth'
+import List from './List'
+import Reg from './Reg'
 
 const App = ({ isLogin }) => {
   return (
     <Switch>
       {isLogin ? (
-        <Route path="/" render={() => <About />} />
+        <Route path="/" render={() => <List />} />
       ) : (
         <Route exact path="/" render={() => <Auth />} />
       )}
+      <Route exact path="/reg" render={() => <Reg />} />
     </Switch>
   )
 }
