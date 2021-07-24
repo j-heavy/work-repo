@@ -1,12 +1,11 @@
 import React from 'react'
 import Logout from './Logout'
-import logoutArrow from './../assets/arrow.png'
 import axios from 'axios'
 import { connect } from 'react-redux'
 import { login } from '../redux/action/login.action'
 
 const username = window.localStorage.getItem('username')
-let id, user
+let id
 
 const LoginError = ({ error, message }) => {
   let password

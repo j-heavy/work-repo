@@ -14,7 +14,7 @@ const Logout = ({ history, login }) => {
     >
       <div className="logout_container">
         <span className="logout_text">Log out</span>
-        <img src={logoutIcon} className="logout_icon"/>
+        <img src={logoutIcon} alt="" className="logout_icon"/>
       </div>
     </div>
   )
