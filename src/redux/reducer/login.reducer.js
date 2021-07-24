@@ -1,5 +1,5 @@
 const init = {
-  isLogin: window.localStorage.getItem('isLogin') || false
+  isLogin: window.localStorage.getItem('isLogin') == 'true' ? true : false
 };
 
 export const loginReducer = (state = init, action) => {

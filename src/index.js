@@ -2,9 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from "react-router-dom"
-import { ConnectedRouter } from 'connected-react-router'
 import { store } from "./redux/store";
-import App from './containers/app'
+import App from './components/App'
 
 import 'sanitize.css/sanitize.css'
 import './index.css'
